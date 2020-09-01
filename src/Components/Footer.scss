@@ -2,52 +2,48 @@ $main-dark: #0f1110;
 $main-white: #ffffff;
 $grey-white: rgba(255, 255, 255, 0.7);
 $primary-color: #27ad6c;
-.navbar {
+
+.footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 10vh;
+  width: 100%;
+  background: #222222;
+  padding: 0 5rem;
 
-  height: 20vh;
-  background-color: $main-dark;
-  padding: 58px;
-  font-size: 1rem;
-  z-index: 2;
-
-  .nav-logo {
-    display: flex;
-    align-items: center;
-
-    img {
-      height: 2rem;
-    }
-  }
-  .nav-links {
+  .footer-links {
     ul {
       display: flex;
       flex-direction: row;
       place-items: center;
       justify-content: space-between;
-      list-style: none;
       text-decoration: none;
-      transition: all 0.5s ease-in-out;
+      list-style: none;
       li a {
-        color: $main-white;
-        text-transform: capitalize;
-        display: inline-block;
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: uppercase;
+        text-decoration: none;
         font-weight: bold;
         margin-right: 0.5rem;
         font-weight: 400;
         letter-spacing: 2px;
-        font-size: 1.2rem;
-        padding: 0.25rem 0.5rem;
-        text-decoration: none;
+        font-size: 0.9rem;
         transition: all 0.5s ease-in-out;
+        margin-right: 2rem;
         &:hover,
         &:active {
           color: $primary-color;
         }
       }
     }
+  }
+}
+
+.copyright {
+  p {
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: capitalize;
   }
 }

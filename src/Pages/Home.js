@@ -6,6 +6,8 @@ import Navbar from '../Components/Navbar';
 import Gallery from '../Components/Gallery';
 import News from '../Components/News';
 import HeroContent from '../Components/HeroContent';
+import Services from '../Components/Services';
+import Footer from '../Components/Footer';
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
       <HeroContent />
       <News />
       <Gallery />
+      <Services />
+      <Footer />
     </>
   );
 };
