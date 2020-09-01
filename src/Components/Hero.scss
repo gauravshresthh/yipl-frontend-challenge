@@ -15,10 +15,7 @@ $greyish-brown: #423633;
   align-items: center;
 
   h1 {
-    width: 922px;
-    height: 96px;
-    font-family: Roboto;
-    font-size: 82px;
+    font-size: 5rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -27,11 +24,9 @@ $greyish-brown: #423633;
     text-align: center;
   }
   h5 {
-    width: 624px;
-    height: 84px;
     opacity: 0.7;
-    font-family: Roboto;
-    font-size: 20px;
+    width: 50%;
+    font-size: 1.5rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -41,8 +36,6 @@ $greyish-brown: #423633;
     color: #ffffff;
   }
   .btn-primary {
-    width: 192px;
-    height: 67px;
     border-radius: 4px;
     border: none;
     box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.9);
@@ -65,6 +58,25 @@ $greyish-brown: #423633;
     &:hover {
       color: $primary-color;
       background-color: $main-white;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero {
+    h1 {
+      font-size: 2rem;
+      margin-top: 5rem;
+    }
+
+    h5 {
+      font-size: 0.8rem;
+      width: 50%;
+    }
+    .btn-primary {
+      font-size: 0.7rem;
+      height: 8vh;
+      width: 25%;
     }
   }
 }

@@ -7,10 +7,7 @@ $warm-grey: #9b9b9b;
   justify-content: center;
   align-items: center;
   h2 {
-    width: 476px;
-    height: 96px;
-    font-family: Roboto;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -26,4 +23,24 @@ $warm-grey: #9b9b9b;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 575.98px) {
+  .hero-content {
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+
+    h2 {
+      font-size: 1.5rem;
+      padding: 3rem;
+    }
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+  }
 }
