@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.scss';
-import img from '../imgs/img-require.png';
+import img from '../imgs/f.png';
 import separatorLogo from '../imgs/separator-logo.png';
 import Navbar from '../Components/Navbar';
 import { Link } from 'react-router-dom';
@@ -111,6 +111,7 @@ const Home = () => {
       <div className="gallery">
         <div className="title">
           <h2>Some random food photos</h2>
+          <p>Just because</p>
         </div>
       </div>
     </>
