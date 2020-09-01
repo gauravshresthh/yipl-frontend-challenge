@@ -46,11 +46,6 @@ $warm-grey: #9b9b9b;
     border: none;
     box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.9);
     background-color: $primary-color;
-  }
-  .btn-info {
-    width: 88px;
-    height: 19px;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -59,15 +54,23 @@ $warm-grey: #9b9b9b;
     letter-spacing: normal;
     text-align: center;
     color: $main-white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
     &:hover,
     &:visited {
       color: $grey-white;
+      background-color: darkmagenta;
     }
   }
 }
 
 .hero-content {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,16 +99,14 @@ $warm-grey: #9b9b9b;
     width: 300px;
     height: 196px;
     margin-right: 80px;
+
     .card-img img {
       width: 100%;
       height: 196px;
       object-fit: contain;
     }
     .card-header h5 {
-      width: 300px;
-      height: 24px;
-      font-family: Roboto;
-      font-size: 18px;
+      font-size: 1.2rem;
       font-weight: bold;
       font-stretch: normal;
       font-style: normal;
@@ -115,18 +116,83 @@ $warm-grey: #9b9b9b;
       color: $primary-color;
     }
     .card-info p {
-      width: 300px;
-      height: 66px;
-      opacity: 0.78;
-      font-family: Roboto;
-      font-size: 14px;
+      font-size: 0.8rem;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.57;
       letter-spacing: normal;
       text-align: center;
-      color: #4a4a4a;
+      color: $warm-grey;
     }
   }
+}
+
+.news {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  .separator {
+    position: absolute;
+    width: 1px;
+    height: 21.5625rem;
+    background-color: #88c542;
+  }
+  .card {
+    h5 {
+      margin-bottom: 1.2rem;
+    }
+    ul {
+      .hr-separator {
+        border-top: 1px solid $primary-color;
+        opacity: 0.2;
+        margin-bottom: 1.2rem;
+      }
+      li {
+        text-decoration: none;
+        list-style-type: none;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $primary-color;
+      }
+    }
+  }
+  h5 {
+    font-size: 3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $warm-grey;
+    text-transform: capitalize;
+  }
+}
+
+.separator-logo {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+  }
+}
+
+.hr-small {
+  width: 7rem;
+  margin: 2rem;
+  border-top: 1px solid $primary-color;
 }

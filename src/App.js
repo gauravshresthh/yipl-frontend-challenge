@@ -9,6 +9,7 @@ import About from './Pages/About';
 import Work from './Pages/Work';
 import Contact from './Pages/Contact';
 import Error from './Pages/Error';
+import ApplyNow from './Pages/ApplyNow';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/About" component={About} />
           <Route path="/Work" component={Work} />
           <Route path="/Contact" component={Contact} />
+          <Route path="/ApplyNow" component={ApplyNow} />
           <Route path="*" component={Error} />
         </Switch>
       </Router>
