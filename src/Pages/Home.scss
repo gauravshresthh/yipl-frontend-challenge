@@ -2,6 +2,7 @@ $main-white: #ffffff;
 $grey-white: rgba(255, 255, 255, 0.7);
 $primary-color: #27ad6c;
 $warm-grey: #9b9b9b;
+$greyish-brown: #423633;
 
 .hero {
   background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
@@ -71,6 +72,7 @@ $warm-grey: #9b9b9b;
 
 .hero-content {
   height: 80vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,9 +129,12 @@ $warm-grey: #9b9b9b;
     }
   }
 }
-
-.news {
+.news-wrapper {
+  overflow: hidden;
   height: 80vh;
+  padding: 5rem;
+}
+.news {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -178,6 +183,7 @@ $warm-grey: #9b9b9b;
 }
 
 .separator-logo {
+  margin-top: 4rem;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -195,4 +201,43 @@ $warm-grey: #9b9b9b;
   width: 7rem;
   margin: 2rem;
   border-top: 1px solid $primary-color;
+}
+
+.gallery {
+  height: 100vh;
+  overflow: hidden;
+  .title {
+    h2 {
+      font-size: 3.5rem;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: center;
+      color: $warm-grey;
+      margin: 2rem;
+    }
+    p {
+      font-style: italic;
+      color: $warm-grey;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: italic;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  }
+  .img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    img {
+      height: 300px;
+      width: 33%;
+      object-fit: contain cover/contain;
+    }
+  }
 }
