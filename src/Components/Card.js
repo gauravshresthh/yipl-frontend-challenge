@@ -1,5 +1,8 @@
 import React from 'react';
 import img from '../imgs/f.png';
+
+import './Card.scss';
+
 const Card = () => {
   return (
     <>

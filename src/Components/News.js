@@ -1,5 +1,7 @@
 import React from 'react';
 import separatorLogo from '../imgs/separator-logo.png';
+import './News.scss';
+
 const News = () => {
   return (
     <>

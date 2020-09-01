@@ -1,6 +1,9 @@
 import React from 'react';
 
 import Card from '../Components/Card';
+
+import './HeroContent.scss';
+
 const HeroContent = () => {
   return (
     <>

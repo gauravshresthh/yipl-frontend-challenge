@@ -1,5 +1,4 @@
 import React from 'react';
-import './Home.scss';
 
 import Hero from '../Components/Hero';
 import Navbar from '../Components/Navbar';

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Services.scss';
-
+import { Link } from 'react-router-dom';
 import ServiceCard from './ServiceCard';
 
 const Services = () => {
@@ -18,9 +18,10 @@ const Services = () => {
           <ServiceCard />
           <ServiceCard />
           <ServiceCard />
-          <ServiceCard />
-          <ServiceCard />
         </div>
+        <Link to="/ApplyNow" className="btn-primary">
+          <span className="btn-info">Apply Now</span>
+        </Link>
       </div>
     </>
   );

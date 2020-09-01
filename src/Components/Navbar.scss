@@ -2,15 +2,15 @@ $main-dark: #0f1110;
 $main-white: #ffffff;
 $grey-white: rgba(255, 255, 255, 0.7);
 $primary-color: #27ad6c;
+
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
   height: 20vh;
   background-color: $main-dark;
-  padding: 58px;
+  padding: 3.5rem;
   font-size: 1rem;
   z-index: 2;
 
@@ -47,6 +47,18 @@ $primary-color: #27ad6c;
         &:active {
           color: $primary-color;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar {
+    padding: 1rem;
+    font-size: 0.8rem;
+    .nav-logo {
+      img {
+        height: 1.5rem;
       }
     }
   }

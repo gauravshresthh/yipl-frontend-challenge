@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ApplyNow = () => {
-  return <div>APPLY NOW PAGE</div>;
+  return <div>Hello from apply now</div>;
 };
 
 export default ApplyNow;

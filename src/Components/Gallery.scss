@@ -1,0 +1,40 @@
+$warm-grey: #9b9b9b;
+
+.gallery {
+  height: 100vh;
+  overflow: hidden;
+  .title {
+    h2 {
+      font-size: 3.5rem;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: center;
+      color: $warm-grey;
+      margin: 2rem;
+    }
+    p {
+      font-style: italic;
+      color: $warm-grey;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: italic;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  }
+  .img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    img {
+      height: 300px;
+      width: 33.3333333333%;
+      object-fit: contain cover/contain;
+    }
+  }
+}
