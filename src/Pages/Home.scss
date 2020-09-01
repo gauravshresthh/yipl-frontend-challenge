@@ -62,8 +62,7 @@ $greyish-brown: #423633;
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.5s ease-in-out;
-    &:hover,
-    &:visited {
+    &:hover {
       color: $grey-white;
       background-color: darkmagenta;
     }

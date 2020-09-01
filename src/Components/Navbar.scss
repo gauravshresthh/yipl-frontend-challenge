@@ -1,7 +1,7 @@
 $main-dark: #0f1110;
 $main-white: #ffffff;
 $grey-white: rgba(255, 255, 255, 0.7);
-
+$primary-color: #27ad6c;
 .navbar {
   display: flex;
   flex-direction: row;
@@ -27,24 +27,21 @@ $grey-white: rgba(255, 255, 255, 0.7);
       display: flex;
       flex-direction: row;
       place-items: center;
-      justify-content: between;
-      text-decoration: none;
-      li {
-        a {
-          text-decoration: none;
-          color: $main-white;
-          text-transform: capitalize;
-          display: inline-block;
-          font-weight: bold;
-          margin-right: 0.5rem;
-          font-weight: 400;
-          letter-spacing: 2px;
-          font-size: 1.2rem;
-          padding: 0.25rem 0.5rem;
-        }
+      justify-content: space-between;
+      li a {
+        color: $main-white;
+        text-transform: capitalize;
+        display: inline-block;
+        font-weight: bold;
+        margin-right: 0.5rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+        padding: 0.25rem 0.5rem;
+        text-decoration: none;
         &:hover,
         &:active {
-          color: $grey-white;
+          color: $primary-color;
         }
       }
     }
