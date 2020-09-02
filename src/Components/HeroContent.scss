@@ -1,11 +1,16 @@
 $warm-grey: #9b9b9b;
 .hero-content {
-  height: 80vh;
-  overflow: hidden;
+  height: 100vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .hero-content-title {
+    padding: 0 0 6rem 0;
+  }
+
   h2 {
     font-size: 3rem;
     font-weight: normal;
@@ -27,8 +32,6 @@ $warm-grey: #9b9b9b;
 
 @media (max-width: 575.98px) {
   .hero-content {
-    align-items: center;
-    justify-content: flex-start;
     height: 100vh;
 
     h2 {

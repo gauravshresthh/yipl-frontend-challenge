@@ -6,16 +6,17 @@ import './HeroContent.scss';
 
 const HeroContent = () => {
   return (
-    <>
-      <div className="hero-content">
+    <div className="hero-content">
+      <div className="hero-content-title">
         <h2>What you should have</h2>
-        <div className="card-container">
-          <Card />
-          <Card />
-          <Card />
-        </div>
       </div>
-    </>
+
+      <div className="card-container">
+        <Card />
+        <Card />
+        <Card />
+      </div>
+    </div>
   );
 };
 
