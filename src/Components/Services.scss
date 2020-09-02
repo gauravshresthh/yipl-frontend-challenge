@@ -93,3 +93,11 @@ $grey-white: rgba(255, 255, 255, 0.7);
     background-color: $main-white;
   }
 }
+
+@media (max-width: 575.98px) {
+  .services {
+    .services-title h2 {
+      font-size: 1rem;
+    }
+  }
+}
