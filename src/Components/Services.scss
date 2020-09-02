@@ -35,33 +35,6 @@ $grey-white: rgba(255, 255, 255, 0.7);
     align-items: center;
     flex-wrap: wrap;
   }
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    .card-subtitle {
-      font-size: 1rem;
-      font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.44;
-      letter-spacing: normal;
-      text-transform: uppercase;
-    }
-  }
-  .card-logo img {
-    width: 2rem;
-    height: 3rem;
-    object-fit: contain;
-    margin-right: 1rem;
-  }
-  .content-info {
-    opacity: 0.5;
-
-    font-size: 1rem;
-
-    line-height: 1.5;
-    letter-spacing: normal;
-  }
 }
 
 .btn-primary {
@@ -97,7 +70,16 @@ $grey-white: rgba(255, 255, 255, 0.7);
 @media (max-width: 575.98px) {
   .services {
     .services-title h2 {
-      font-size: 1rem;
+      font-size: 1.5rem;
+      padding-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    .service-card-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
     }
   }
 }

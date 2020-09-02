@@ -1,6 +1,8 @@
 import React from 'react';
 import cardLogo from '../imgs/ic-tailored@3x.png';
 
+import './ServiceCard.scss';
+
 const ServiceCard = () => {
   return (
     <>

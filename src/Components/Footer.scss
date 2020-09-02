@@ -42,8 +42,28 @@ $primary-color: #27ad6c;
 }
 
 .copyright {
-  p {
+  span {
     color: rgba(255, 255, 255, 0.5);
     text-transform: capitalize;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .footer-links {
+      ul {
+        li a {
+          font-size: 0.5rem;
+        }
+      }
+    }
+    .copyright {
+      span {
+        font-size: 0.5rem;
+      }
+    }
   }
 }

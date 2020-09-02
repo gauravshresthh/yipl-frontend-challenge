@@ -7,7 +7,9 @@ const Footer = () => {
     <>
       <div className="footer">
         <div className="copyright">
-          <p>&copy; Copyright @gauravshresthh 2020. All rights Reserved.</p>
+          <span>
+            &copy; Copyright @gauravshresthh 2020. All rights Reserved.
+          </span>
         </div>
         <div className="footer-links">
           <ul>
