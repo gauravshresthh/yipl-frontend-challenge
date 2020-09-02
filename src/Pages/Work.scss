@@ -1,0 +1,17 @@
+$primary-color: #27ad6c;
+
+.work {
+  height: 100vh;
+
+  .work__content {
+    height: 70vh;
+    background-color: White;
+    color: $primary-color;
+    text-align: center;
+    padding: 7rem;
+    h2 {
+      font-size: 5rem;
+      font-weight: lighter;
+    }
+  }
+}

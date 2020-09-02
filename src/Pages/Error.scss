@@ -1,0 +1,16 @@
+$primary-color: #27ad6c;
+
+.error {
+  height: 100vh;
+  .error__content {
+    height: 70vh;
+    background: white;
+    color: $primary-color;
+    padding: 3rem;
+    text-align: center;
+    h2 {
+      font-size: 5rem;
+      font-weight: lighter;
+    }
+  }
+}

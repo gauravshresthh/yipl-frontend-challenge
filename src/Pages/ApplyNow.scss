@@ -1,0 +1,17 @@
+$primary-color: #27ad6c;
+
+.applyNow {
+  height: 100vh;
+
+  .applyNow__content {
+    height: 70vh;
+    background-color: white;
+    color: $primary-color;
+    text-align: center;
+    padding: 7rem;
+    h1 {
+      font-size: 5rem;
+      font-weight: lighter;
+    }
+  }
+}

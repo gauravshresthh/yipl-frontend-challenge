@@ -1,0 +1,16 @@
+$primary-color: #27ad6c;
+
+.contact {
+  height: 100vh;
+  .contact__content {
+    height: 70vh;
+    background: white;
+    color: $primary-color;
+    padding: 8rem;
+    text-align: center;
+    h2 {
+      font-size: 5rem;
+      font-weight: lighter;
+    }
+  }
+}

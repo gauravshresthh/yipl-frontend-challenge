@@ -9,6 +9,7 @@ $primary-color: #27ad6c;
   justify-content: space-between;
   align-items: center;
   height: 20vh;
+  width: 100%;
   background-color: $main-dark;
   padding: 3.5rem;
   font-size: 1rem;
@@ -60,5 +61,9 @@ $primary-color: #27ad6c;
         height: 1.5rem;
       }
     }
+  }
+}
+@media (max-width: 375px) {
+  .navbar {
   }
 }

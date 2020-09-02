@@ -8,6 +8,8 @@ import HeroContent from '../Components/HeroContent';
 import Services from '../Components/Services';
 import Footer from '../Components/Footer';
 
+import './Home.scss';
+
 const Home = () => {
   return (
     <>
