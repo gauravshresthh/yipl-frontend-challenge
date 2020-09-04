@@ -1,0 +1,8 @@
+.nav-hero__wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(../imgs/img-hero-image@3x.jpg) no-repeat center center/cover;
+}

@@ -5,13 +5,12 @@ $warm-grey: #9b9b9b;
 $greyish-brown: #423633;
 
 .news-wrapper {
-  height: 100vh;
-  overflow: hidden;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10%;
+  background: rgb(255, 243, 243);
 }
 
 .news {

@@ -1,15 +1,10 @@
 $warm-grey: #9b9b9b;
 .hero-content {
-  height: 100vh;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  .hero-content-title {
-    padding: 0 0 6rem 0;
-  }
+  padding: 10%;
 
   h2 {
     font-size: 3rem;
@@ -32,8 +27,6 @@ $warm-grey: #9b9b9b;
 
 @media (max-width: 575.98px) {
   .hero-content {
-    height: 100vh;
-
     h2 {
       font-size: 1.5rem;
       padding: 3rem;

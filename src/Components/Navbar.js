@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.scss';
 import logo from '../imgs/logo.png';
+import menu from '../imgs/menu.svg';
 
 const Navbar = () => {
+  const [toggleInfo, setToggleInfo] = useState(true);
+
+  const toggleHandler = () => {
+    setToggleInfo(!toggleInfo);
+  };
   return (
-    <nav className="navbar">
+    <div className="navbar ">
+      <img
+        src={menu}
+        alt="menu"
+        className="hamburger__menu"
+        onClick={toggleHandler}
+      />
       <div className="nav-logo">
         <img src={logo} alt="logo" />
       </div>
-      <div className="nav-links">
+      <div className={`nav-links ${toggleInfo ? ' openNav' : ' closeNav'}`}>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -25,7 +37,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </nav>
+    </div>
   );
 };
 

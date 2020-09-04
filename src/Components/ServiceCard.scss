@@ -1,40 +1,54 @@
+.service-card {
+  display: flex;
+  flex-direction: row;
+
+  width: 33.3333333%;
+}
+
 .card-content {
   display: flex;
   flex-direction: column;
-  .card-subtitle {
-    font-size: 1rem;
+  flex-wrap: wrap;
+  width: 50%;
+
+  .card-subtitle h4 {
+    font-size: 1.2rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.44;
+    line-height: 1;
     letter-spacing: normal;
     text-transform: uppercase;
   }
 }
-.card-logo img {
-  width: 2rem;
-  height: 3rem;
-  object-fit: contain;
-  margin-right: 1rem;
+.card-logo {
+  img {
+    margin-top: 1.4rem;
+    margin-right: 1em;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
 }
 .content-info {
   opacity: 0.5;
-
   font-size: 1rem;
-
   line-height: 1.5;
   letter-spacing: normal;
+}
+@media (max-width: 800px) {
+  .service-card {
+    width: 50%;
+  }
 }
 
 @media (max-width: 575.98px) {
   .card-content {
     display: flex;
     flex-direction: column;
+    width: 50%;
     .card-subtitle {
       font-size: 0.7rem;
-
-      line-height: 1;
-
       text-transform: uppercase;
     }
   }
@@ -46,9 +60,6 @@
   }
   .content-info {
     opacity: 0.5;
-
     font-size: 0.5rem;
-
-    line-height: 1;
   }
 }

@@ -6,11 +6,13 @@ $primary-color: #27ad6c;
   background-color: white;
   display: flex;
   flex-direction: column;
+
   .About__content {
     height: 70vh;
     text-align: center;
     padding: 3rem;
     color: $primary-color;
+    background-color: wheat;
 
     h1 {
       opacity: 0.9;

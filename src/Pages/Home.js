@@ -13,8 +13,10 @@ import './Home.scss';
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <Hero />
+      <div className="nav-hero__wrapper">
+        <Navbar />
+        <Hero />
+      </div>
       <HeroContent />
       <News />
       <Gallery />

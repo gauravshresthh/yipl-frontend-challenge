@@ -6,13 +6,10 @@ $main-white: #ffffff;
 $grey-white: rgba(255, 255, 255, 0.7);
 $main-dark: #0f1110;
 
-* {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-}
-
-.App {
-  height: 100vh;
 }

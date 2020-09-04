@@ -4,12 +4,12 @@ $grey-white: rgba(255, 255, 255, 0.7);
 $primary-color: #27ad6c;
 
 .footer {
+  height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
-  width: 100%;
+
   background: #222222;
   padding: 0 5rem;
 
@@ -45,6 +45,19 @@ $primary-color: #27ad6c;
   span {
     color: rgba(255, 255, 255, 0.5);
     text-transform: capitalize;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    height: auto;
+    flex-direction: column;
+  }
+  .copyright {
+    margin-top: 2%;
+    span {
+      font-size: smaller;
+    }
   }
 }
 
