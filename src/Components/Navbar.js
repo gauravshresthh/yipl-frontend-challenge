@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.scss';
 import logo from '../imgs/logo.png';
@@ -6,12 +6,27 @@ import menu from '../imgs/menu.svg';
 
 const Navbar = () => {
   const [toggleInfo, setToggleInfo] = useState(true);
+  const [headerShow, setHeaderShow] = useState(false);
 
   const toggleHandler = () => {
     setToggleInfo(!toggleInfo);
   };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setHeaderShow(true);
+    } else setHeaderShow(false);
+  };
+
   return (
-    <div className="navbar ">
+    <div
+      className="navbar "
+      style={{ background: headerShow ? 'black' : 'transparent' }}
+    >
       <img
         src={menu}
         alt="menu"
@@ -34,6 +49,11 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="Contact">Contact</Link>
+          </li>
+          <li>
+            <span className="search--icon">
+              <i class="fa fa-search "></i>
+            </span>
           </li>
         </ul>
       </div>

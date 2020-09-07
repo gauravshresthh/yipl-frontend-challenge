@@ -19,9 +19,9 @@ const Home = () => {
       </div>
       <HeroContent />
       <News />
-      <Gallery />
+      {/* <Gallery />
       <Services />
-      <Footer />
+      <Footer /> */}
     </>
   );
 };

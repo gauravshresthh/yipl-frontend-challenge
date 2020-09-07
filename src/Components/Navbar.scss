@@ -5,26 +5,23 @@ $primary-color: #27ad6c;
 
 .navbar {
   display: flex;
-  flex-direction: row;
+
   justify-content: space-between;
   align-items: center;
   height: 20vh;
-  padding: 1rem 3rem;
+  padding: 1em 3em;
   font-size: 1rem;
-  background: $main-dark;
+  background: transparent;
   opacity: 0.7;
 
   .nav-logo {
-    display: flex;
-    align-items: center;
-
     img {
       height: 30px;
     }
   }
 
   .hamburger__menu {
-    height: 40px;
+    height: 2.3em;
     cursor: pointer;
     display: none;
     background-color: $primary-color;
@@ -32,12 +29,12 @@ $primary-color: #27ad6c;
 
   ul {
     display: flex;
-    flex-direction: row;
-    place-items: center;
+
     justify-content: space-between;
     list-style: none;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
+
     li a {
       color: $main-white;
       text-transform: capitalize;
@@ -47,7 +44,7 @@ $primary-color: #27ad6c;
       font-weight: 400;
       letter-spacing: 2px;
       font-size: 1.2rem;
-      padding: 0.25rem 0.5rem;
+      padding: 0.15em 0.3em;
       text-decoration: none;
       transition: all 0.5s ease-in-out;
       &:hover,
@@ -57,35 +54,37 @@ $primary-color: #27ad6c;
     }
   }
 }
-@media (max-width: 1200px) {
-  .navbar {
-    height: 15vh;
+
+.search--icon {
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  &:hover {
+    color: $primary-color;
+    transition: all 0.5s ease-in-out;
   }
 }
 
+@media (max-width: 1200px) {
+}
+
 @media (max-width: 600px) {
-  .openNav {
-    display: none !important;
-  }
   .navbar {
     position: relative;
-    padding: 1rem;
+    padding: 1em;
     font-size: 0.8rem;
 
     .hamburger__menu {
       position: absolute;
       top: center;
-      right: 2rem;
+      right: 2em;
       display: block;
     }
 
     ul {
       flex-direction: column;
 
-      text-align: right;
-
-      margin-top: 30vh;
-      margin-right: 1rem;
+      text-align: left;
 
       background: $primary-color;
       li a {
@@ -107,12 +106,7 @@ $primary-color: #27ad6c;
 }
 @media (max-width: 375px) {
   .navbar {
-    height: 10%;
-    overflow: hidden;
-
     .nav-logo {
-      margin: 0;
-      padding: 0;
       height: 1rem;
     }
   }
